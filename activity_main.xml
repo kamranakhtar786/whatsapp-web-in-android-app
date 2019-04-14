@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.technolifehacker.whatsweb.MainActivity">
+<LinearLayout
+    android:layout_alignParentTop="true"
+    android:id="@+id/lin_ad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+</LinearLayout>
+   <WebView
+       android:layout_below="@+id/lin_ad"
+       android:id="@+id/webview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </WebView>
+
+</RelativeLayout>
