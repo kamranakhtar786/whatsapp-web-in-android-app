@@ -63,7 +63,7 @@ String url ="https://web.whatsapp.com/\uD83C\uDF10/"+ Locale.getDefault().getLan
     private static final String STORAGE_PERMISSION = Manifest.permission.WRITE_EXTERNAL_STORAGE; //android.permission.WRITE_EXTERNAL_STORAGE
     private static final String[] VIDEO_PERMISSION = {CAMERA_PERMISSION, AUDIO_PERMISSION};
 
-    private static final String WHATSAPP_WEB_URL = "https://web.whatsapp.com/\uD83C\uDF10/"+ Locale.getDefault().getLanguage();
+    private static final String url = "https://web.whatsapp.com/\uD83C\uDF10/"+ Locale.getDefault().getLanguage();
 
     private static final int FILECHOOSER_RESULTCODE = 200;
     private static final int CAMERA_PERMISSION_RESULTCODE = 201;
@@ -134,6 +134,7 @@ String url ="https://web.whatsapp.com/\uD83C\uDF10/"+ Locale.getDefault().getLan
 
 
         web = (WebView)findViewById(R.id.webview);
+        // load url in browser  
         web.loadUrl(url);
         web.getSettings().setLoadWithOverviewMode(true);
         web.getSettings().setUseWideViewPort(true);
@@ -211,7 +212,7 @@ String url ="https://web.whatsapp.com/\uD83C\uDF10/"+ Locale.getDefault().getLan
         super.onDestroy();
         this.onDestroy();
     }
-
+   //  back button clicked
     @Override
     public void onBackPressed() {
        if (web.canGoBack()){
